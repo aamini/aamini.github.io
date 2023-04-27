@@ -4,7 +4,7 @@ cohesion_r = 150; // 粒子聚拢吸引半径
 speed = 4; //粒子的飞行速度上限
 drop_0 = [];
 function preload() {
-  // myFont = loadFont('https://github.com/venbs/p5js-Flocking/blob/master/AM293.ttf?raw=true');
+  myFont = loadFont('AM293.ttf');
 }
 
 function setup() {
@@ -113,7 +113,7 @@ function showText() {
   text('L I Q U I D   A I', width / 2 + (text_offsetX * offset_rate), height / 2 + (text_offsetY * offset_rate) + 0);
   textSize(20);
   text('We are building the future of AI', width / 2 + (text_offsetX * offset_rate), height / 2 + (text_offsetY * offset_rate) + 60);
-  textFont('AM293');
+  textFont(myFont);
   textStyle(BOLD);
 }
 function mouseCreate() {
