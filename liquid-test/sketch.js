@@ -34,7 +34,7 @@ class Drop {
     this.vel = createVector(random(-1,1),random(-1,1));
     this.acc = createVector();
     this.weight = random(3,8);
-    this.color = 240 || color_s;
+    this.color = random(150, 240) || color_s;
     this.acc_limit = random(0.1,0.3);
     this.vel_limit = random(1,speed);
     this.repulsion = createVector();
