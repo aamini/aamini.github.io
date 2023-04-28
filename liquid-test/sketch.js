@@ -1,4 +1,4 @@
-drop_Num = 40; // 粒子的数量
+drop_Num = 50; // 粒子的数量
 repulsion_r = 33; // 粒子排斥半径，防止扎堆
 cohesion_r = 150; // 粒子聚拢吸引半径
 speed = 4; //粒子的飞行速度上限
@@ -34,7 +34,7 @@ class Drop {
     this.vel = createVector(random(-1,1),random(-1,1));
     this.acc = createVector();
     this.weight = random(3,8);
-    this.color = random(150, 240) || color_s;
+    this.color = random(120, 240) || color_s;
     this.acc_limit = random(0.1,0.3);
     this.vel_limit = random(1,speed);
     this.repulsion = createVector();
@@ -109,10 +109,10 @@ function showText() {
   noStroke();
   fill("white");
   textAlign(CENTER);
-  textSize(70);
+  textSize(sqrt(width)/1);
   text('L I Q U I D   A I', width / 2 + (text_offsetX * offset_rate), height / 2 + (text_offsetY * offset_rate) + 0);
-  textSize(20);
-  text('We are building the future of AI', width / 2 + (text_offsetX * offset_rate), height / 2 + (text_offsetY * offset_rate) + 60);
+  textSize(sqrt(width)/2.5);
+  text('Coming soon — Building the future of AI', width / 2 + (text_offsetX * offset_rate), height / 2 + (text_offsetY * offset_rate) + sqrt(width)*1.5);
   textFont(myFont);
   textStyle(BOLD);
 }
