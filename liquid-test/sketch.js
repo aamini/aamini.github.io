@@ -118,6 +118,6 @@ function showText() {
 }
 function mouseCreate() {
     if(mouseIsPressed){
-        drop_0.push(new Drop(mouseX,mouseY));
+        // drop_0.push(new Drop(mouseX,mouseY));
     }
 }
